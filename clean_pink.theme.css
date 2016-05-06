@@ -1,0 +1,111 @@
+//META{"name":"clean_pink","description":"cleaner discord","author":"Andreasvb","version":"1.0"}*// 
+
+.app{border:#FF00BC solid 1px;}
+.theme-dark .chat>.content .messages .message-group:not(.has-divider){margin-top:-10px;margin-bottom:-10px;}
+.theme-dark .chat form{border-top:1px solid #1c1e22;background-color:#282b30;}
+.message-group .btn-option{visibility:visible;opacity:0.1;}
+.message-group .btn-option:hover{visibility:visible;opacity:1;}
+.dms{display:block;margin-top:15px;margin-bottom:15px;}
+.guilds-separator:after{top:10px;}
+.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before{width:4px;height:12px;border-radius:0;top:4px;left:0;}
+.guilds li.active .guild-inner:before{border-radius:0;background:#FF00BC;}
+.guilds li .guild-inner:before{width:9px;}
+.guilds li.unread .guild-inner:before{border-radius:0;background:#FFF;}
+.guilds li .guild-inner:before{width:9px;}
+.channels-wrap{width:225px;}
+.guild-channels{padding:0;margin-bottom:0px;}
+.guild-channels ul .channel-text a{padding:3px 2px 2px 13px;}
+.guild-channels ul .channel-voice{padding:3px 2px 2px 13px;}
+.guild-channels ul .channel-voice-states{margin-top:5px;}
+.guild-channels ul+header{margin-top:5px;border-top:1px solid #383838;}
+.guild-header header{padding:28px 9px;}
+.message-group{padding:14px 0;}
+.channel-textarea-inner textarea{color:#FF00BC!important;}
+.channel-textarea-inner{padding:8px;}
+.channel-textarea{margin:32px 20px 2px!important;}
+.channel-textarea-upload{margin:-6px 10px -6px -10px;}
+.theme-dark .channel-textarea-inner{top:-18px;border-width:1px;}
+.chat .new-messages-bar,.popout header{background-color:rgba(255,0,188,0.65)!important;}
+.chat .new-messages-bar{left:0;right:0;}
+.chat .new-messages-bar button:last-child{color:#7F22C3;}
+.chat>.content .messages .mentioned .message-text{background:rgba(111,0,215,0.2)!important;}
+.friends-table .messages .mentioned .message-text,.messages-wrapper .messages .mentioned .message-text{animation:mentioned-pulse 1.5s infinite}@-webkit-keyframes mentioned-pulse{0%{box-shadow:0 0 0 0 #ff0099}70%{box-shadow:0 0 10px 10px rgba(241,71,71,0)}to{box-shadow:0 0 0 0 rgba(255,0,100,0)}}@keyframes mentioned-pulse{0%{box-shadow:0 0 0 0 #ff0099}70%{box-shadow:0 0 10px 10px rgba(255,0,100,0)}to{box-shadow:0 0 0 0 rgba(241,71,71,0)}}
+.message-group .mentioned .message-text:after{border-radius:0 0 0 0;left: -9px;border-left: 3px solid #ff00bc!important;}
+.message-group .comment .markup {white-space: pre-line;}
+.account,.account .avatar-small{height:42px;}
+.account .avatar-small{height:31px;}
+#voice-connection{height:22px;}
+.guild-channels ul .channel-text a{padding:3px 2px 2px 13px;}
+.guild-channels ul .channel-text.selected:before{border-left:2px solid #ff00bc!important;}
+.guild-channels ul .channel-text:hover:not(.unread):before{border-left:2px solid #ff00bc;}
+.guild-channels ul .channel-text:hover a{color:#FF00BC;}
+.guild-channels ul .channel-voice-states li:hover{color:#FF00BC;}
+.guild-channels ul .channel-voice-states li.speaking{color:#FF00BC;}
+.guild-channels ul .channel-voice-states li.popout-open span{color:#00C2FF;}
+.guild-channels ul .channel-voice-states li.speaking .avatar-small{background-color:#6F8AE0;cursor:pointer;border:2px solid #FF00BC;}
+.guild-channels ul .channel-voice-states li.speaking .avatar-small:hover,.guild-channels ul .channel-voice-states li.speaking .draggable:hover .avatar-small{border-color:#7F43B5;}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb{border-radius:0;}
+.scroller-wrap .scroller::-webkit-scrollbar{width:7px;}
+.typing{height:18px;width:99%;left:5px;background-color:rgba(0,0,255,0)!important;line-height:18px;}
+.links{border-top:0;padding:8px 10px;}
+#voice-connection{height:12px;position:fixed;bottom:1px;padding-bottom:12px;padding-top:0;width:205px;border-top:0;}
+#voice-connection .btn{width:32px;height:25px;}
+.voice-connection-channel{margin-top:1px;}
+.account .btn{width:32px;height:25px;}
+#twitchcord-button{background-color:#35373C;width:46px;height:34px;top:21px;right:1px;}
+.message-group.compact .message .markup .user-name{font-weight:400!important;}
+/* LIGHT THEME FIX WIP */
+.app.theme-light .channel-textarea-inner{padding:7.5px 8px;top:-18px;border-width:1px;}
+.app.theme-light .channel-textarea{margin:33px 20px 2px!important;}
+.app.theme-light .guild-channels{background-color:#fff;}
+.app.theme-light .guild-channels header h2{color:#282b30;}
+.app.theme-light .guild-channels ul .channel a{text-shadow:0 0 0 rgba(0,0,0,0.25);}
+.app.theme-light .guild-channels ul .channel .channel-name{color:#000;}
+.app.theme-light .guild-channels ul .channel-voice-states li{color:#5D5D5D;}
+.app.theme-light .guild-channels ul .channel-text.selected{background:#F1F1F1;}
+.app.theme-light .guild-channels ul .channel-text:hover{background:#FB8DE8;}
+.app.theme-light .guild-channels .icon-settings{background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light .guild-channels .icon-instant-invite{background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light .guild-channels ul .channel-voice-states li.speaking .avatar-small{background-color:#FFF;border:2px solid #FF00BC;}
+.app.theme-light .guild-channels ul .channel-voice-states li.speaking .avatar-small{box-shadow:inset 0 0 0 11px #FFF;opacity:0.5;}
+.app.theme-light .guild-header header{background-color:#FFF;color:#000;box-shadow:0 1px 0 #FFFFFF,inset 0 -1px 0 rgba(0,0,0,.1);box-shadow:0 2px 0 hsla(200,9%,93%,.25);}
+.app.theme-light .btn-hamburger span:nth-child(1){background-color:#AAA;}
+.app.theme-light .btn-hamburger span:nth-child(2){background-color:#AAA;}
+.app.theme-light .btn-hamburger span:nth-child(3){background-color:#AAA;}
+.app.theme-light .btn-hamburger span:nth-child(4){background-color:#AAA;}
+.app.theme-light .btn-hamburger span:nth-child(5){background-color:#AAA;}
+.app.theme-light .btn-hamburger span:nth-child(6){background-color:#AAA;}
+.app.theme-light .guild-header ul{background:#FFF;}
+.app.theme-light .guild-header ul a{color:#444;}
+.app.theme-light .account{background:#FFF;color:#505050;border-top:1px solid #E8E8E8;}
+.app.theme-light .account .status{border:2px solid #FFF;}
+.app.theme-light .account .btn{background:#FFF;}
+.app.theme-light #voice-connection .btn{background:#FFF;}
+.app.theme-light .account .btn-mute{border-right:1px solid #D8D8D8;}
+.app.theme-light #voice-connection .btn-info{border-right:1px solid #D8D8D8;}
+.app.theme-light .account .btn-deafen{border-right:1px solid #D8D8D8;}
+.app.theme-light .account #voice-connection .btn-info{border-right:1px solid #D8D8D8;}
+.app.theme-light .account .btn-deafen{box-shadow:inset 1px 0 0 #FFF;}
+.app.theme-light .account .btn-settings{box-shadow:inset 1px 0 0 #FFF;}
+.app.theme-light .account .btn-settings:after{opacity:0.6;background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light .account .btn-info:after{opacity:0.6;background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light .account .btn-disconnect:after{opacity:0.6;background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light #voice-connection .btn-info:after{opacity:0.6;background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light #voice-connection .btn-disconnect:after{opacity:0.6;background-blend-mode:difference;background-color:#FFF;}
+.app.theme-light .account .btn-settings:hover:after{opacity:0.3;}
+.app.theme-light #voice-connection .btn-info:hover:after{opacity:0.3;}
+.app.theme-light #voice-connection .btn-disconnect:hover:after{opacity:0.3;}
+.app.theme-light .account .btn-group{border:1px solid #CECECE;}
+.app.theme-light #voice-connection .btn-group{border:1px solid #CECECE;}
+.app.theme-light .links{background:#FFF;}
+.app.theme-light #voice-connection{background:#FFF;color:#000;}
+.app.theme-light #voice-connection .voice-connection-channel{color:#000;}
+/* SIDE */
+.app.theme-light .guilds-wrapper{background:#FFF;}
+.app.theme-light .guilds-add{background:#FFF;}
+.guilds-add{background:#1E2124;}
+.app.theme-light .guilds-separator:after{background:#DADADA;}
+.app.theme-light .help-container{background:#FFF;}
+.app.theme-light .help-container:after{background:#FFF;}
+/* GLOBAL */
+*{font-family:"Terminus (TTF)"!important;font-weight:400!important;font-size:9pt!important;}
