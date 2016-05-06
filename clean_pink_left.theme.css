@@ -1,0 +1,16 @@
+//META{"name":"clean_left","description":"left bar","author":"Andreasvb","version":"1.0"}*//
+/* LEFT */
+
+.dms {display: block;margin-top: 0px;margin-bottom: 0px;}
+.guilds {padding: 10px 10px;width: 80px;}
+.guilds .friends-icon {width: 32px;height: 32px;}
+.guilds .friends-online {margin: 5px 0;left: -9px!important;position: relative;}
+.guilds-wrapper {width: 50px;}
+.guilds li {padding-bottom: 2px;width: 32px;height: 32px;}
+.guilds li+li {margin-top: 5px;}
+.guilds li .avatar-small {width: 32px;height: 32px;background-size: 32px 32px;} 
+.guilds li .guild-inner a {width: 32px;height: 32px;left: -6px;}
+.guilds li.audio .guild-inner:after {top: -6px;right: 22px;width: 15px;height: 15px;}
+.guilds li .guild-inner:before {width: 14px;} 
+.guilds li.active .guild-inner:before {margin-top: -7px;height: 32px;top: 7px;}
+.guilds li.unread .guild-inner:before {margin-top: -7px;border-radius: 0px;background: #FFFFFF;}
